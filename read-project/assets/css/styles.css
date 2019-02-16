@@ -1,0 +1,182 @@
+/*----- Reset -----*/
+
+html{height: 100px;}
+img,video {max-width: 100%; display: block;}
+*{box-sizing: border-box;}
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,figure{margin: 0; padding:0}
+
+
+/* -- Varáveis --*/
+
+:root {
+    
+    /* Tipografia */
+
+    --serif-font: 'Coustard', serif;
+    --sans-serif-font: 'Lora', sans-serif;
+    --base-font-size:16px;
+    --medium-font-size:24px;
+    --big-font-size: 2rem; /* 30px */
+    --small-font-size: 0.875rem; /* 14px */
+    
+        
+    /* Box model */
+    --space: 30px;
+    --spacex2: calc(var(--space)*2);
+}
+
+
+
+/* -- Estilos Gerais -- */
+
+body {
+    font-family: var(--sans-serif-font);
+    font-size: var(--base-font-size);
+    font-weight: 300;
+    color: #333;
+    background: #f7f7f7;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+
+h1{
+    font-family:  var(--serif-font);
+    font-size: var(--big-font-size);
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+h2 {
+    font-family:  var(--serif-font);
+    font-size: var(--big-font-size);
+    line-height: 1.2;
+    text-transform: none;
+    font-weight: 400;
+    text-align: center;
+}
+
+h3 {
+    font-family:  var(--serif-font);
+    font-size: var(--medium-font-size);
+    line-height: 1.2;
+    text-transform: none;
+    font-weight: 600;
+}
+
+
+a{
+    color: #333;
+    text-decoration:none;
+    transition: all 1s ease; 
+}
+
+a:hover {opacity: 0.7;}
+
+main {max-width: 1300px; margin: 0px auto; padding: var(--spacer); min-height: calc(100vh - 200px);}
+
+
+.grid{
+	display: grid;
+	grid-gap: 30px;
+}
+
+.white-text, .white-text a{
+	color: #fff;
+}
+
+
+
+/* -- Header -- */
+
+
+header {
+	width: 100%;
+	padding: var(--spacex2);
+	text-align: center;
+}
+
+
+header h1 {font-family: 'UnifrakturMaguntia'; font-size: 96px; 
+text-transform: none; display: inline-block;}
+
+
+
+footer{
+	padding: var(--spacex2);
+	font-size: var(--small-font-size);
+	text-align: center;
+}
+
+.search_container {
+	padding: 20px 0px;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	margin: 20px auto;
+	max-width: 900px;
+}
+.search_container input {
+	padding: 10px 16px;
+	width: 100%;
+	border: 0px;
+	background: none;
+	outline: none;
+	font-size: 16px;
+}
+
+section{
+	max-width: 800px;
+	margin: 0px auto;
+}
+
+article  {margin-bottom: 60px;}
+article img {margin: 30px 0px;}
+article  .details {text-align: center; margin: 10px 0px;}
+a.more {
+    display: block;
+    max-width: 18.75em;
+    text-align: center;
+    margin: 2.5em auto 0 auto;
+    padding: 0.5em 0 0.4em 0;
+    color: #444;
+    font-weight: 400;
+    font-size: .85em;
+    background: none;
+    border-bottom: 1px dotted #ccc;
+    letter-spacing: 2px;
+}
+
+
+
+
+section.comments .comments_contain .comment {
+	padding: var(--space) 0px;
+	border-bottom: 1px solid #c3c3c3;
+}
+
+section.comments .comments_contain .comment:last-of-type{
+	margin-bottom: var(--space);
+}
+
+section.comments form {
+	margin-top: var(--space);
+}
+section.comments form input[type="text"], form textarea{
+	width: 100%;
+	padding:10px 20px;
+	border: 1px solid #ccc;
+	margin-bottom: 14px;
+	background: none
+}
+section.comments form textarea {
+	height: 100px;
+}
+
+section.comments form button {
+	padding:10px 20px;
+	background: none;
+	border: 1px solid #ccc;
+	font-weight: bold;
+}
+
